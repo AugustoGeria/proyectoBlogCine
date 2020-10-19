@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augusto Geria, Nelson Juares, Lucas Solorzano, Christian Vergara,Leonardo Palavecino">
+    <meta name="description" content="Blog de Cine">
+    <meta name="keywords" content="Cinema, Cine, Blog, Estrenos, Series, Peliculas">
+    <title>Cinema</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/cinema.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bbb52c970c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-black">
+
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-between pt-4 px-0 px-lg-3">
+                <div class="col-4 justify-content-start d-none d-lg-flex"><button
+                        class="btn btn-red btn-inline rounded-pill font-weight-bold"
+                        onclick="location='login.html'">Ingresar</button></div>
+                <div class="col-12 col-lg-4 justify-content-center d-flex align-items-center">
+                    <h1><a class="titulo text-decoration-none px-2" href="index.html">Cinema</a></h1>
+                </div>
+                <div class="col-4 justify-content-end d-none d-lg-flex"><button
+                        class="btn btn-red hover-btn rounded-pill font-weight-bold" type="button" data-toggle="modal"
+                        data-target="#registro">Registrate</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mb-lg-1 mt-lg-4">
+    </header>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top p-0">
+        <button class="navbar-toggler collapsed w-100" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse justify-content-md-center collapse text-center" id="navbar">
+            <ul class="navbar-nav p-lg-0">
+                <li class="nav-item hover-nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item hover-nav">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item active-nav active">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item hover-nav">
+                    <a class="nav-link" href="contactos.html">Contacto</a>
+                </li>
+                <li class="nav-item hover-nav">
+                    <a class="nav-link d-block d-lg-none texto" type="button" class="btn btn-primary"
+                        data-toggle="modal" data-target="#registro">Registrate</a>
+                </li>
+                <li class="nav-item hover-nav">
+                    <a class="nav-link d-block d-lg-none" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrum -->
+
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-blacklight my-3">
+                <li class="breadcrumb-item"><a href="index.html" class="texto">Inicio</a></li>
+                <li class="breadcrumb-item active text-light">Galeria</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <!--pagination-->
+    <nav class="d-flex justify-content-center my-3">
+        <ul class="pagination pagination-lg">
+            <li class="page-item active" aria-current="page">
+                <a class="btn btn-red hover-btn" href="galeria.html">
+                    Series
+                </a>
+            </li>
+            <li class="page-item ml-3"><a class="btn btn-red active-btn" href="peliculas.html">Peliculas</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+
+            <div class="col-12 col-md-4 col-lg-3">
+                <!--card 1-->
+
+                <a href="" data-toggle="modal" data-target="#exampleModal1">
+                    <img src="img/Three Billboards Outside Ebbing, Missouri Movie 2.png"
+                        class="card-img-top mb-3 efecto-card rounded" alt="3 Anuncios por un crimen"></a>
+                <!--card 2-->
+                <a href="" data-toggle="modal" data-target="#exampleModal2">
+                    <img src="img/interestelar.jpg" class="card-img-top mb-3 efecto-card rounded" alt="..."></a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <!--card 3-->
+                <a href="" data-toggle="modal" data-target="#exampleModal3">
+                    <img src="img/Coco.jpg" class="card-img-top mb-3 efecto-card rounded" alt="...">
+                </a>
+
+                <!--card 4-->
+                <a href="" data-toggle="modal" data-target="#exampleModal4">
+                    <img src="img/reyleon.jpg" class="card-img-top mb-3 efecto-card rounded" alt="...">
+                </a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <!--card 5-->
+                <a href="" data-toggle="modal" data-target="#exampleModal5">
+                    <img src="img/frozen.jpg" class="card-img-top mb-3 efecto-card rounded" alt="...">
+                </a>
+
+                <!--card 6-->
+                <a href="" data-toggle="modal" data-target="#exampleModal6">
+                    <img src="img/jumanji.jpg" class="card-img-top mb-3 efecto-card rounded" alt="...">
+                </a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <!--card 7-->
+                <a href="" data-toggle="modal" data-target="#exampleModal7">
+                    <img src="img/elrobodelsiglo.jpg" class="card-img-top mb-3 efecto-card rounded" alt="...">
+                </a>
+
+                <!--card 8-->
+                <a href="" data-toggle="modal" data-target="#exampleModal8">
+                    <img src="img/sonic.jpg" class="card-img-top mb-3 efecto-card rounded" alt="...">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+
+    <footer class="container-fluid bg-blacklight text-light mt-3 text-center text-lg-left">
+        <div class="row">
+    
+          <div class="col-12 col-lg-4 p-4">
+            <h1 class="texto">Mas Informacion</h1>
+            <p class="mt-4 text-center text-lg-left">Nos gusta el cine, no solo porque nos entretiene, también porque nos
+              identificamos
+              con los
+              personajes de las
+              películas. Vemos en ellos aspectos de nosotros mismos, pero en diferentes situaciones, circunstancias,
+              lugares, etc.</p>
+          </div>
+    
+          <div class="col-12 col-lg-4 p-4 text-center text-lg-left">
+            <h1 class="texto">Redes Sociales</h1>
+            <div class="d-flex flex-column justify-content-around align-items-center align-items-lg-start">
+              <div class="row align-items-center mt-3">
+                <img src="img/footer/facebook.png" class="img-footer ml-0 ml-md-3">
+                <a target="_blank" href="error404.html" class="m-0 ml-3 text-light">Siguenos en Facebook</a>
+                
+              </div>
+              <div class="row align-items-center mt-4">
+                <img src="img/footer/twiter.png" class="img-footer ml-0 ml-md-3">
+                <a target="_blank" href="error404.html" class="m-0 ml-3 text-light">Siguenos en Twiter</a>
+              </div>
+              <div class="row align-items-center mt-4">
+                <img src="img/footer/in.png" class="img-footer ml-0 ml-md-3">
+                <a target="_blank" href="error404.html" class="m-0 ml-3 text-light">Siguenos en Instagram</a>
+              </div>
+              <div class="row align-items-center mt-4">
+                <img src="img/footer/goo.png" class="img-footer ml-0 ml-md-3">
+                <a target="_blank" href="error404.html" class="m-0 ml-3 text-light">Siguenos en Google</a>
+              </div>
+              <div class="row align-items-center mt-4">
+                <img src="img/footer/pinterest.png" class="img-footer ml-0 ml-md-3">
+                <a target="_blank" href="error404.html" class="m-0 ml-3 text-light">Siguenos en Pinterest</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-lg-4 p-4">
+            <h1 class="texto">Informacion Contactos</h1>
+            <div class="d-flex flex-column justify-content-around align-items-center align-items-lg-start">
+              <div class="row align-items-center mt-4 justify-content-center justify-content-md-start">
+                <img src="img/footer/direccion.png" class="img-footer ml-3 mb-2 mb-md-0">
+                <p class="m-0 ml-3">Gral. Paz 576, T4000 San Miguel de Tucumán, Tucumán</p>
+              </div>
+    
+              <div class="row align-items-center mt-4">
+                <img src="img/footer/telefono.png" class="img-footer ml-3">
+                <p class="m-0 ml-3">+3864593847</p>
+              </div>
+    
+              <div class="row align-items-center mt-4">
+                <img src="img/footer/usua.png" class="img-footer ml-3">
+                <p class="m-0 ml-3">lucasfidel1390.com</p>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div>
+          <div class="row justify-content-between p-3 bg-black text-light">
+            <p class="m-0">© 2020 Todos los Derechos Reservados |<a class="text-light" href="nosotros.html"> GRUPO 4</a>
+            </p>
+            <p class="m-0"><a href="error404.html" class="text-light">Privacion y Politica </a>|<a class="text-light"
+                href="error404.html"> Terminos y Condiciones</a></p>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Modales -->
+
+    <!-- Modal Registro -->
+    <div class="modal fade" id="registro">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-black text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registro">Registrate con tu email</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-5 py-4">
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre y apellido:</label>
+                            <input type="text" placeholder="Leonardo Palavecino" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo electronico:</label>
+                            <input type="email" placeholder="ejemplo@email.com" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Contraseña:</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmar contraseña:</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-red">Registrar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-red" data-dismiss="modal">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/Three Billboards Outside Ebbing, Missouri Movie 2.png" alt="breadkind bad"
+                    class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">3 Anuncios sobre un Crimen</h5>
+                    <p class="card-text text-light text-center">Mildred Hayes es una mujer de 50 años, cuya hija ha sido
+                        asesinada. Ha acudido a las autoridades, comandadas por el admirado jefe de policía William
+                        Willoughby, esperando que resuelvan el caso y se haga justicia. Pero después de varios meses a
+                        la espera de algún arresto hacia el responsable, Mildred no ha recibido ninguna información o
+                        ayuda sobre el crimen. Ante la aparente indiferencia de las autoridades, Mildred ha decidido
+                        buscar un método para evidenciar la negligencia de la policía de su pueblo. Así, ha pintado tres
+                        grandes anuncios, con fuertes mensajes contra el jefe de policía, llamando la atención de todo
+                        el país. Esto provocará una batalla entre la madre que busca justicia y las autoridades que
+                        quieren silenciarla a como de lugar Cinta que mezcla el drama con el humor negro, especialidad
+                        del director Martin McDonagh (En Brujas), escrita por él mismo, producida por Fox Searchlight
+                        Pictures y Film4. .</p>
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/interestelar.jpg" alt="breadkind bad" class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">Interestellar</h5>
+                    <p class="card-text text-light text-center">Inspirada en la teoría del experto en relatividad Kip
+                        Stepehen Thorne sobre la existencia de los agujeros de gusano, y su función como canal para
+                        llevar a cabo los viajes en el tiempo. La historia gira en torno a un grupo de intrépidos
+                        exploradores que se adentran por uno de esos agujeros y viajan a través del mismo, encontrándose
+                        en otra dimensión. Un mundo desconocido se abre ante ellos y deberán luchar por mantenerse
+                        unidos si quieren volver de una pieza.
+
+                        La película cuenta con un reparto de lujo con nombres como Matthew McConaughey ('Sahara'), Anne
+                        Hathaway ('El caballero oscuro. La leyenda renace'), Jessica Chastain ('La noche más oscura') y
+                        Michael Caine ('El caballero oscuro'), todos ellos a las órdenes de Christopher Nolan
+                        ('Memento', 'Origen').</p>
+
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/Coco.jpg" alt="" class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">COCO</h5>
+                    <p class="card-text text-light">Miguel es un niño que sueña con ser músico, pero su familia se lo
+                        prohíbe porque su tatarabuelo, músico, los abandonó, y quieren obligar a Miguel a ser zapatero,
+                        como todos los miembros de la familia. Por accidente, Miguel entra en la Tierra de los Muertos,
+                        de donde sólo podrá salir si un familiar difunto le concede su bendición, pero su tatarabuela se
+                        niega a dejarlo volver con los vivos si no promete que no será músico. Debido a eso, Miguel
+                        escapa de ella y empieza a buscar a su tatarabuelo.</p>
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4-->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/reyleon.jpg" alt="" class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">El Rey Leon</h5>
+                    <p class="card-text text-light">Ambientada en la sabana africana donde ha nacido el futuro rey.
+                        Simba idolatra a su padre, el rey Mufasa, y se toma muy en serio su propio destino real. Pero en
+                        el reino no todos celebran la llegada del nuevo cachorro. Scar, el hermano de Mufasa y antiguo
+                        heredero al trono, tiene sus propios planes. La batalla por Pride Rock está asolada por la
+                        traición, la tragedia y el drama, y termina con el exilio de Simba. Con la ayuda de un curioso
+                        par de nuevos amigos, Simba tendrá que aprender a madurar y a recuperar lo que le pertenece por
+                        derecho.</p>
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 5-->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/frozen.jpg" alt="" class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">Frozen II</h5>
+                    <p class="card-text text-light">
+                        Películas para niños a partir de 6 años
+                        Continúan las aventuras de las hermanas de Arendelle. Elsa y Anna, junto a Kristoff, el reno
+                        Sven y el muñeco de nieve Olaf, regresan en esta segunda parte de la película de animación de
+                        Disney Frozen: El reino del hielo (2013). Esta vez, el reino ha dejado de ser seguro desde que
+                        Elsa comienza a escuchar extrañas voces que la llaman en busca la respuestas. Un secreto de su
+                        pasado será la clave para solucionar los problemas actuales del reino de Arendelle. Elsa, junto
+                        a sus fieles amigos, se adentrarán en lo desconocido y viajarán por un antiguo bosque encantado.
+                        Juntos se proponen encontrar el origen de los poderes de Elsa para salvar su reino. Jennifer Lee
+                        y Chris Buck se encargan nuevamente de la dirección de esta secuela.</p>
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 6-->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/jumanji.jpg" alt="" class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">Jumanji</h5>
+                    <p class="card-text text-light">Las aventuras continúan en el fantástico mundo del juego Jumanji,
+                        donde nada es lo que parece. En esta ocasión, los jugadores vuelven al juego, pero sus
+                        personajes se han intercambiado entre sí, lo que ofrece un curioso plantel: los mismos héroes
+                        con distinta apariencia. Pero, ¿dónde está el resto de la gente?</p>
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal 8----------->
+    <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/sonic.jpg" alt="breadkind bad" class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">Sonic the hedgehog</h5>
+                    <p class="card-text text-light">Sonic intenta navegar por las complejidades de la vida en la Tierra
+                        con su nuevo mejor amigo, un humano llamado Tom Wachowski. Pronto deben unir fuerzas para evitar
+                        que el malvado Dr. Robotnik capture a Sonic y use sus poderes para dominar el mundo.</p>
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 7-->
+    <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close mt-3 mr-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="degradado rounded-left">
+                <img src="img/elrobodelsiglo.jpg" alt="" class="img-fluid rounded">
+                <div class="card-body rounded">
+                    <h5 class="card-text display-4 text-light text-center">El Robo del Siglo</h5>
+                    <p class="card-text text-light">Viernes 13 de enero de 2006. Los francotiradores del Grupo Halcón
+                        están a la espera de una orden. Miguel Sileo, el negociador, deja diluir las esperanzas de que
+                        Vitette, uno de los líderes de la banda de ladrones que entró a la sucursal del Banco Río de
+                        Acassuso de señales de vida. El grupo Halcón recibe la orden y entra: se encuentran con lo
+                        inesperado. Vitette, Araujo, De La Torre, Debauza, Marciano y El Gaita han desaparecido. Solo un
+                        eslabón queda suelto. Meses después del robo, La Turca, esposa de Beto De la Torre, despechada
+                        porque su marido se fue con otra a disfrutar de su nueva fortuna, denuncia a los seis
+                        integrantes de la banda. Uno a uno va cayendo. El dinero nunca aparece. ¿Fue lo de La Turca una
+                        grieta en el plan perfecto, o incluso esto había sido ideado por el cerebro del Robo del Siglo?
+                    </p>
+                    <div class="container text-light text-center">
+                        Calificacion:
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+
+
+
+    <!--Librerias----------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

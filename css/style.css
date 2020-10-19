@@ -1,0 +1,308 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Backgrounds */
+
+.bg-blacklight{
+    background-color: #414141!important;
+}
+
+.bg-black{
+    background-color: #252525!important;
+}
+
+.bg-red{
+    background-color: #af0404!important;
+}
+
+.bg-none{
+    background-color: #25252500!important;
+}
+
+/* Estilos de textos */
+
+.titulo{
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 3px;
+    text-shadow: 0 0 8px #af0404;
+    box-shadow: 0 0 8px #af0404;
+    cursor: none;
+}
+
+.titulo-big{
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 3px;
+    text-shadow: 0 0 8px #af0404;
+    box-shadow: 0 0 8px #af0404;
+    font-size: 100px;
+}
+
+.titulo:hover{
+    text-shadow: 0 0 20px #af0404;
+    box-shadow: 0 0 20px #af0404;
+    transition: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.titulo-big:hover{
+    text-shadow: 0 0 20px #af0404;
+    box-shadow: 0 0 20px #af0404;
+    transition: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.texto{
+    color: #ff0000 !important;
+}
+
+.texto-dark{
+    color: #af0404 !important;
+}
+
+a:hover{
+    color: #ff0000!important;
+    cursor: pointer;
+}
+
+.texto-shadow{
+    text-shadow: 0 0 20px #af0404;
+}
+
+
+/* nav-bar, focus, botones, detalles, hr */
+
+.disabled-btn{
+    color: #414141!important;
+    background-color: #ff000000!important;
+    border-color: #414141!important;
+    cursor: default!important;
+}
+
+hr{
+    border-color: #3a3a3ad3;
+}
+
+.navbar{
+    color: #ff0000;
+    background-color: #30303036;
+}
+
+
+.btn-red{
+    color:#af0404;
+    border-color: rgb(255, 0, 0);
+}
+
+
+.btn-red:hover{
+    color:#ff0000;
+}
+
+.page-item a:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25)!important;
+}
+
+.btn:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25)!important;
+}
+
+
+input:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25)!important;
+    border: rgba(255,0,0,.25)!important;
+}
+
+textarea:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25)!important;
+    border: rgba(255,0,0,.25)!important;
+}
+
+.navbar-toggler:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25)!important;
+    border: rgba(255,0,0,.25)!important;
+}
+
+.hover-btn{
+    background-color: #ff000000 !important;
+    color: #ff0000;
+    transition: 450ms !important;
+}
+
+.hover-btn:hover{
+    background-color: #ff0000 !important;
+    color: #fff!important;
+    border-color: #ff0000 !important;
+}
+
+.active-btn{
+    background-color: #ff0000!important;
+    color: #fff!important;
+}
+
+.active-btn:hover{
+    border-color: #af0404!important;
+    background-color: #af0404!important;
+    color: #ff0000!important;
+    transition: 450ms;
+}
+
+.active-nav{
+    border-bottom: 2px solid #ff0000;
+}
+
+
+.hover-nav:hover{
+    border-bottom: 2px solid #ff0000;
+    transition: 200ms;
+}
+
+/* Efecto imagenes */
+
+.card:hover #zoom{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+/* Publicidad */
+
+.publicidad:hover{
+    transition: 110ms;
+    filter: brightness(125%);
+    cursor: pointer;
+}
+
+/* Contactos */
+
+.encabezado1 #titulo-enca{
+    z-index: 2;
+}
+
+.encabezado1 img{
+    filter: grayscale(90%);
+    z-index: 0;
+}
+
+.encabezado1 h1{
+    z-index: 2;
+    /* position: absolute; */
+}
+
+/* Galeria */
+
+.efecto-card{
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.efecto-card:hover{
+    box-shadow: -3px 4px 5px #af0404;
+    transition: 0.8s;
+    left: 4px;
+    top: -4px;
+}
+
+.degradado {
+    background-color: #ff0000;
+    background-image: linear-gradient(180deg, #ff0000 50%, #000006 100%) !important;
+}
+
+/* Nosotros */
+
+.fondo{
+    background-image: url(/img/iron-man-1024x768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 700px;
+    width: 100%;
+}
+
+.redondo{
+    border-radius: 50%;
+}
+
+#equipo{
+    font-weight: 600;
+    font-size: 250%;
+}
+
+#equipo2{
+    font-size: 300%;
+}
+
+
+.parrafo1{
+    font-size: 145%;
+}
+
+.titulos{
+    font-size: 30px;
+    line-height: 1.3em;
+}
+
+.galeria{
+    transition: 1s;
+    border: solid;
+    border-radius: 7px;
+    cursor: pointer;
+    
+
+}
+
+.galeria:hover{
+    box-shadow: 0px 0px 20px #af0404;
+    transform: scale(1.025);
+}
+
+
+/* Footer */
+
+
+.img-footer{
+    width: 36px;
+    height: 36px;
+}
+
+
+/* error 404 */
+
+
+.error{
+    position: absolute;
+    z-index: 50;
+    filter: blur(2px);
+    cursor: none;
+}
+
+.error:hover{
+    filter: blur(0);
+    transition: 100ms;
+}
+
+@media all and (max-width: 960px){
+    .navbar{
+        margin-bottom: 10px;
+    }
+
+    .fondo{
+        background-image: none;
+    }
+
+}
+
+
+
